@@ -1,0 +1,174 @@
+// main: styles.less
+
+/* ---------------------------------------- RIGHT PANEL ----------------------------------------------*/
+
+/* Styles Right Panel */
+.main .rightPanel{ float:right; width:340px; min-height:400px; background-color:#555555; padding:5px; }
+.main .rightPanel .contAlerts{ float:left; padding:10px; color:#FFF; }
+
+.main .rightPanel .contAlerts .alert {float: left;margin-bottom: 10px;}
+.main .rightPanel .contAlerts .alert .category{ width: 60px; font-size: 12px; text-align: center; float: left; font-weight:bold;}
+.main .rightPanel .contAlerts .alert .cat1{ background-color: #EA4134;}
+.main .rightPanel .contAlerts .alert .cat2{ background-color: #9751cb;}
+.main .rightPanel .contAlerts .alert .cat3{ background-color: #78b64e;}
+.main .rightPanel .contAlerts .alert .alertIcon{ float: left; background-image: url('../images/alertIcon.png');width: 14px;height: 14px;margin-left: 10px;margin-right: 4px;}
+.main .rightPanel .contAlerts .alert .message{ float: left; font-size: 12px;}
+
+.main .rightPanel .contLinks .addIcon{ float: left; background-image: url('../images/addIcon.png');width: 40px;height: 40px; margin:10px;}
+.main .rightPanel .contLinks .addTiles{background-color: transparent !important;}
+.main .rightPanel .contLinks .tile,
+.main .contResponsiveFull .tile{float: left;margin: 5px;padding: 5px;position: relative;}
+.main .rightPanel .contLinks .tile span,
+.main .contResponsiveFull .tile span{position: absolute;bottom: 5px;right: 10px;font-size: 12px;text-align: right;}
+.main .rightPanel .contLinks .big span{font-size:16px;}
+.main .rightPanel .contLinks .double span{font-size:16px;}
+.main .rightPanel .contLinks .big .date{padding-top:20px;padding-left:10px;}
+.main .rightPanel .contLinks .big .meeting{padding-top:10px;padding-left:10px; font-size:11px;}
+.main .rightPanel .contLinks .tile:hover,
+.main .contResponsiveFull .tile:hover{opacity: 0.7;cursor: pointer;}
+.main .rightPanel .contLinks .small,
+.main .contResponsiveFull .small{width: 60px;height: 60px;}
+.main .rightPanel .contLinks .big{width: 140px;height: 140px;}
+.main .rightPanel .contLinks .double{width: 140px;height: 60px;background-color: #92d050;}
+.main .rightPanel .contLinks .brown{background-color: #c55a11;}
+.main .rightPanel .contLinks .red{background-color: #c00000;}
+.main .leftPanel{ float:left; width:300px; background-color:#FFF; min-height:700px; margin:0px 20px; }
+.main .linksPanel{ float:right; }
+.lblCollapseOut{ float:left; background-image:url(../images/openPanel.png); background-repeat:no-repeat; width:45px; height:45px; margin-bottom:1px; cursor:pointer; }
+.lblCollapseIn{ float:left; background-image:url(../images/closePanel.png); background-repeat:no-repeat; width:45px; height:45px; margin:-5px 0px 0px -5px; cursor:pointer; }
+.lblCollapse:hover{ cursor:pointer; }
+
+.linksSmallRight{ float:left; clear:both; margin-top:1px; }
+.linksSmallRight .mailLink{ float:left; background-image:url(../images/mailLink.png); background-repeat:no-repeat; width:45px; height:45px; clear:both; margin-bottom:1px; }
+.linksSmallRight .userLink{ float:left; background-image:url(../images/userLink.png); background-repeat:no-repeat; width:45px; height:45px; clear:both; margin-bottom:1px; }
+.linksSmallRight .documentsLink{ float:left; background-image:url(../images/documentsLink.png); background-repeat:no-repeat; width:45px; height:45px; clear:both; margin-bottom:1px; }
+.linksSmallRight .calendarLink{ float:left; background-image:url(../images/calendarLink.png); background-repeat:no-repeat; width:45px; height:45px; clear:both; margin-bottom:1px; }
+.linksSmallRight .chatLink{ float:left; background-image:url(../images/chatLink.png); background-repeat:no-repeat; width:45px; height:45px; clear:both; margin-bottom:1px; }
+.linksSmallRight .serverLink{ float:left; background-image:url(../images/serverLink.png); background-repeat:no-repeat; width:45px; height:45px; clear:both; margin-bottom:1px; }
+.linksSmallRight .favoriteLink{ float:left; background-image:url(../images/favoriteLink.png); background-repeat:no-repeat; width:45px; height:45px; clear:both; margin-bottom:1px; }
+.linksSmallRight li:hover{
+	cursor: pointer;
+	opacity: 0.6;
+}
+
+
+.main .rightPanel {
+  background-color: white;
+  border: 1px solid rgb(232, 232, 232);
+}
+
+.main .rightPanel .contAlerts .titleWP,
+.main .rightPanel .contLinks .titleWP,
+.main .rightPanel .contCalendario .titleWP{
+    float: left;
+    width: 100%;
+    font-weight: bold;
+    font-size:14px;
+    font-family:trade-gothic-lt;
+    text-transform: uppercase;
+    color: gray;
+    border-top: 1px solid rgb(226, 226, 226);
+    border-bottom: 1px solid rgb(226, 226, 226);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.main .rightPanel .contAlerts .alert, .main .rightPanel .contCalendario .evento  {
+
+    margin-bottom: 10px;
+    border-left: 7px solid gray;
+    width: 98%;
+    background-color: rgb(244, 244, 244);
+    padding: 10px 0px 10px 0px;
+}
+
+.contLinks, .contAlerts, .contCalendario{
+    margin-bottom:30px;
+  float: left;
+  padding: 10px;
+}
+
+.main .rightPanel .contAlerts .alert .category, .main .rightPanel .contCalendario .evento .date {
+  width: 100%;
+  font-size: 12px;
+  text-align: left;
+  padding-left: 10px;
+  color: gray;
+}
+
+.main .rightPanel .contCalendario .evento .date {
+  width: 18%;
+  height: 50px;
+  background-color: gray;
+  float: left;
+  color: white;
+  text-align: center;
+  padding:4px 0px 0px 0px;
+  font-size: 13px;
+}
+
+.main .rightPanel .contCalendario .evento .date span{
+  font-size: 22px;
+  display: block;
+}
+
+.main .rightPanel .contCalendario .evento {
+  padding: 0px 0px 0px 0px;
+  border-left: none;
+}
+
+
+.main .rightPanel .contAlerts .alert .message, .main .rightPanel .contCalendario .evento .message {
+    font-size: 12px;
+    color: gray;
+    padding-left: 10px;
+}
+.main .rightPanel .contAlerts .alert .message{
+    padding:10px 10px 0px 10px;
+}
+
+.linksPanel-inner > i {
+    font-size:30px;
+}
+
+.rightPanel > i{
+    color: #C0C0C0;
+    cursor: pointer;
+    font-size:30px;
+    margin-bottom: 20px;
+    margin-top: 20px;    
+    margin-left:10px;
+}
+.main .rightPanel .contLinks .addIcon{
+    color:gray;
+    text-align: center;
+    padding-top: 7px;
+    font-size: 30px;
+    background-image: none;
+}
+
+.main .rightPanel .contCalendario .evento {float: left;margin-bottom: 10px;}
+.main .rightPanel .contCalendario .evento .time{ width:70%; font-size: 12px; text-align: left; float: left; padding:10px 10px 3px 10px;}
+.main .rightPanel .contCalendario .evento .alertIcon{ float: left; background-image: url('../images/alertIcon.png');width: 14px;height: 14px;margin-left: 10px;margin-right: 4px;}
+.main .rightPanel .contCalendario .evento .message{ float: left; font-size: 12px;}
+
+.main .rightPanel .contAlerts .titleWP,
+.main .rightPanel .contLinks .titleWP
+{float:left; margin-bottom:@mrg-3x;}
+
+
+
+.main .rightPanel .contLinks .big span {
+  font-size: 18px;
+}
+.main .rightPanel .contLinks .double span {
+  font-size: 15px;
+}
+
+.linksPanel{background-color: white; padding-left: 0px; padding-right: 0px;}
+ul.linksSmallRight {width: 100%;float: none;}
+ul.linksSmallRight li{margin-bottom: 30px; text-align: center;}
+ul.linksSmallRight li i, .linksPanel i{font-size: 21px; color:#FF9020; text-align: center;}
+.linksPanel-inner > i{margin-bottom: 20px; margin-top:20px; color:#C0C0C0; cursor: pointer;text-align: center;}
+.linksPanel .linksPanel-inner{border: 1px solid rgb(232, 232, 232);text-align: center;}

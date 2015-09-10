@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Raona Intranet - Comunidad</title>
+<link rel="stylesheet" href="css/styles.css">
+<script language="javascript" type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/isotope.pkgd.js"></script>
+<script language="javascript" type="text/javascript" src="js/init.js"></script>
+<link rel="stylesheet" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+<!-- FancyBox -->
+<link rel="stylesheet" href="plugins/fancyapps-fancyBox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="plugins/fancyapps-fancyBox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".fancybox").fancybox();
+        $('#buscador').keypress(function(event){
+            var keycode = (event.keyCode ? event.keyCode : event.which);
+            if(keycode == '13'){
+                window.open("search-standard.html");
+            }
+        });         
+    });
+</script>
+</head>
+<body>
+	<div class="topSharePointBar">
+		<div class="leftZone">
+			<a href="index.html"><div class="logo"></div></a>
+			<div class="menu">
+				<ul>
+                    <a href="#"><li class="hamburguer"><i class="fa fa-bars"></i> Menú</li></a>                    
+					<a href="index.html"><li><i class="fa fa-location-arrow"></i>Comunicados</li></a>
+					<a href="collaboration.html"><li class="menu-selected"><i class="fa fa-users"></i>Colaboración</li></a>
+					<a href="content-map.html"><li class="menu-last"><i class="fa fa-sitemap"></i>Contents Map</li></a>
+				</ul>
+			</div>
+		</div>
+		<div class="rightZone">
+			<div class="menu">
+				<ul>
+					<li><img src="images/person-rounded-02.png"/></li>
+					<li><div class="name">Marco Stroppiana</div>
+					<div class="arrowDown"><i class="fa fa-sort-desc"></i></div>
+					</li>
+					<li><div class="settingsIcon"><i class="fa fa-cog"></i></div></li>
+					<li><div class="helpIcon"><i class="fa fa-question"></i></div></li>	
+				</ul>
+			</div>
+		</div>
+	</div>
+		
+    
+	<div class="main">
+
+	<!-- Header Content, Filters and Title -->
+	<div class="header">
+            <h1>Comunidad &raquo; Experiencia de Usuario</h1>
+            <div class="globalSearch globalSearchSmph" id="globalSearchSmph">
+                <span class="arrowSearch"></span>
+                <input type="text" id="buscador" alt="Buscar" placeholder="Buscar..." />
+            </div>
+        </div>
+		
+		<!--End header -->
+		
+
+        <div class="contResponsiveFull centerColumn" id="content">
+        <div class="leftColumn">  
+            <span class="titleWP"><i class="fa fa-link"></i> Principal</span>
+            <ul class="links-rapidos">
+                <a href="community-ux.html" class="selected"><li>Inicio</li></a>
+                <a href="community-documentos.html"><li>Documentos</li></a>
+                <a href="#"><li>Calendario</li></a>
+                <a href="#"><li>Glosario</li></a>  
+            </ul>
+            <span class="titleWP"><i class="fa fa-link"></i> Reciente</span>
+            <ul class="links-rapidos">
+                <a href="#"><li>Procedimientos</li></a>                 
+            </ul>
+        </div>            
+            <div class="muro">
+            <div class="post-container">
+                <img src="images/person5.jpg"> 
+                <div class="arrow-left"></div>
+                <div class="post-body">
+                    <textarea placeholder="Escribe un comentario..." ></textarea>
+                </div>
+            </div>
+            <div class="post-container">
+                <img src="images/person1.jpg"> 
+                <div class="arrow-left"></div>
+                <div class="post-body">
+                    <span class="author">Gustavo Suarez</span>
+                    <div class="text">La optimización web para dispositivos móviles es vital hoy en día para poder ofrecer al usuario una buena experiencia de navegación a través de su Tablet o Smartphone. Entonces, el desarrollo de un diseño debería comenzar desde móvil o desde pantalla de escritorio? ¿Qué opináis?</div>
+                    <div class="bottom"><a href="#"><i class="fa fa-comment"></i> Comentar</a><a href="#"><i class="fa fa-thumbs-up"></i> Like</a><span class="hour">Hace 26 minutos</span></div>
+                </div>
+            </div>   
+            <div class="post-container respuesta">
+                <img src="images/person5.jpg"> 
+                <div class="arrow-left"></div>
+                <div class="post-body">
+                    <span class="author">Joan Costa</span> - <span class="adjunto"><a href="#">planilla.xls</a></span>
+                    <div class="text">Muy interesante, dejo adjunto un archivo excel con un listado de las resoluciones de pantalla más utilizadas en 2015.</div>
+                    <div class="bottom"><a href="#"><i class="fa fa-thumbs-up"></i> Like</a><span class="hour">Hace 12 minutos</span></div>
+                </div>
+            </div>  
+            <div class="post-container">
+                <img src="images/person4.jpg"> 
+                <div class="arrow-left"></div>
+                <div class="post-body">
+                    <span class="author">María Giovannardi</span> - <span class="adjunto"><i class="fa fa-link"></i> <a href="http://emprenedoria.barcelonactiva.cat/emprenedoria/cat/edit.do?codiIdioma=1&id=649376&id_activitat_mestre=649376" target="_blank">Design Thinking</a></span>
+                    <div class="text">En este enlace del Barcelona Activa, encontraréis información relacionada con la metodología Design Thinking, que se destaca por ofrecer formación gratuita a todos los profesionales de este ámbito.</div>
+                    <div class="bottom"><a href="#"><i class="fa fa-comment"></i> Comentar</a><a href="#"><i class="fa fa-thumbs-up"></i> Like</a><span class="hour">Hace 1 día</span></div>
+                </div>
+            </div>  
+            <div class="post-container">
+                <img src="images/person5.jpg"> 
+                <div class="arrow-left"></div>
+                <div class="post-body">
+                    <span class="author">Joan Costa</span>
+                    <div class="text">Creo que deberíamos establecer una metodología de maquetación CSS con BEM, es una técnica muy potente y modular!</div>
+                    <div class="bottom"><a href="#"><i class="fa fa-comment"></i> Comentar</a><a href="#"><i class="fa fa-thumbs-up"></i> Like</a><span class="hour">Hace 2 días</span></div>
+                </div>
+            </div>    
+            
+        </div>   
+        <div class="rightColumn">
+            <span class="titleWP"><i class="fa fa-link"></i> LINKS RÁPIDOS</span>
+            <ul class="links-rapidos">
+                <li><a href="#">Subir un documento</a></li>
+                <li><a href="#">Comenzar una discusión</a></li>
+                <li><a href="#">Crear un evento</a></li>                
+            </ul>
+            <span class="titleWP"><i class="fa fa-users"></i> PROPIETARIOS</span>
+            <ul class="propietarios">
+                <li><a href="#"><img src="images/person1.jpg"></a></li>
+                <li><a href="#"><img src="images/person4.jpg"></a></li>
+                <li><a href="#"><img src="images/person5.jpg"></a></li>                
+            </ul>  
+            <span class="titleWP"><i class="fa fa-line-chart"></i> TRENDING TOPICS</span>
+            
+            <ul class="trending">
+                <li>
+                      #UX
+                </li>
+                <li>
+                      #Wireframes
+                </li>  
+                <li>
+                      #Mockups
+                </li>                 
+                <li>
+                      #Arquitectura
+                </li>
+                <li>
+                      #Información
+                </li>  
+                <li>
+                      #Diseño
+                </li>
+                <li>
+                      #Design Thinking
+                </li>                  
+            </ul>            
+        </div> 
+        </div>        
+       
+        
+
+		 <div class="linksPanel" id="linksPanel">
+             <div class="linksPanel-inner">
+                <i class="fa fa-angle-double-left" id="collapseOut"></i>
+
+                <ul class="linksSmallRight" id="linksSmallRightID">
+                    <li>
+                    <i class="fa fa-envelope-o"></i>
+                    </li>
+                    <li><i class="fa fa-user"></i></li>
+                    <li><i class="fa fa-folder-open"></i></li>
+                    <li><i class="fa fa-calendar"></i></li>
+                    <li><i class="fa fa-comments"></i></li>
+                    <li><i class="fa fa-server"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+	  
+	  <div class="rightPanel" id="rightPanel">
+                <i class="fa fa-angle-double-right" id="collapseIn"></i>
+				<div class="contAlerts">
+					<span class="titleWP"><i class="fa fa-bell"></i> Alertas</span>
+					<div class="alert">
+						<div class="category">Seguridad</div>
+						<div class="message">El próximo dia 31 de julio se llevará a cabo un ensayo de evacuación del edificio ante una ficticia alarma de incendio.</div>
+					</div>
+					<div class="alert">
+						<div class="category">IT Systems</div>
+						<div class="message">El fin de semana del 1 de agosto se procederá a la actualización de la plataforma SAP y no estará disponible hasta el lunes 3 de agosto a las 8:00 a.m.</div>
+					</div>
+					<div class="alert">
+						<div class="category">RRHH</div>
+						<div class="message">Se ha realizado el ingreso de la paga especial de beneficios de la verano junto con la nomina de julio.</div>
+					</div>
+				</div>
+				<div class="contLinks">
+					<span class="titleWP"><i class="fa fa-link"></i> LINKS CORPORATIVOS</span>
+					<div class="tile small">
+						<span>Branch Offices</span>
+					</div>
+					<div class="tile small">
+						<span>Sites</span>
+					</div>
+					<div class="tile small">
+						<span>Activities</span>
+					</div>
+					<div class="tile small addTiles">
+						<div class="addIcon"><i class="fa fa-plus"></i></div>
+					</div>
+					<div class="tile big">
+						<span>Raona Contacts</span>
+					</div>
+					<div class="tile small">
+						<span>My</span>
+					</div> 
+					<div class="tile small">
+						<span>Summary</span>
+					</div> 
+					<div class="tile double">
+						<span>Resources</span>
+					</div> 					
+				</div>    
+				<div class="contLinks">
+					<span class="titleWP"><i class="fa fa-link"></i> MIS LINKS</span>
+					<div class="tile small">
+						<span>Contracts</span>
+					</div>
+					<div class="tile small">
+						<span>Proposals</span>
+					</div>
+					<div class="tile small">
+						<span>Project Center</span>
+					</div>
+					<div class="tile small addTiles">
+						<div class="addIcon"><i class="fa fa-plus"></i></div>
+					</div>
+					<div class="tile double">
+						<span>REP Site</span>
+					</div>
+					<div class="tile small">
+						<span>Solutions</span>
+					</div>
+					<div class="tile small">
+						<span>Vacations</span>
+					</div>   					
+				</div>        
+          
+				<div class="contCalendario">
+					<span class="titleWP"><i class="fa fa-calendar"></i> Calendario</span>
+					<div class="evento">
+                        <div class="date"><span>05</span> MIE</div>
+						<div class="time">15:00 - 17:00</div>
+						<div class="message">Revisar planning grupo 1</div>
+					</div>
+					<div class="evento">
+                        <div class="date"><span>07</span> VIE</div>
+						<div class="time">12:00 - 13:00</div>
+						<div class="message">Follow Up</div>
+					</div>
+					<div class="evento">
+                        <div class="date"><span>11</span> MAR</div>
+						<div class="time">9:00 - 11:00</div>
+						<div class="message">Reunión de RRHH</div>
+					</div>
+					<div class="evento">
+                        <div class="date"><span>15</span> MAR</div>
+						<div class="time">9:00 - 11:00</div>
+						<div class="message">UX Brain Storming</div>
+					</div>                   
+				</div>          
+			</div>
+    </div>        
+
+        
+    </div>
+			
+    <!-- End div main -->
+
+</body>
+</html>

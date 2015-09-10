@@ -1,0 +1,407 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/+DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Raona Intranet - Mapa de Contenidos</title>
+<link rel="stylesheet" href="css/styles.css">
+<script language="javascript" type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/isotope.pkgd.js"></script>
+<script language="javascript" type="text/javascript" src="js/init.js"></script>
+<link rel="stylesheet" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+<!-- FancyBox -->
+<link rel="stylesheet" href="plugins/fancyapps-fancyBox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="plugins/fancyapps-fancyBox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+<!-- slick (carousel) -->  
+<link rel="stylesheet" type="text/css" href="plugins/slick-1.5.7-carousel/slick/slick.css"/>  
+<link rel="stylesheet" type="text/css" href="plugins/slick-1.5.7-carousel/slick/slick-theme.css"/>    
+<script type="text/javascript" src="plugins/slick-1.5.7-carousel/slick/slick.min.js"></script>
+    
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".fancybox").fancybox();
+        $('.carousel').slick({
+            infinite: false,
+            slidesToShow: 3,
+            slidesToScroll: 3
+        });
+        $('#buscador').keypress(function(event){
+            var keycode = (event.keyCode ? event.keyCode : event.which);
+            if(keycode == '13'){
+                window.open("search-standard.html");
+            }
+        }); 
+        $("#typeLinks").click(function(){
+            if($("#typeLinks").val() == "corporativos"){
+                $("#typeLinks").width("170px");
+                $("#mis").hide();
+                $("#corporativos").fadeIn(1000);
+            }
+            else{
+                $("#typeLinks").width("110px");                
+                $("#corporativos").hide();                 
+                $("#mis").fadeIn(1000);           
+            }
+        });                
+    });  
+</script>
+    
+</head>
+<body>
+    
+	<div class="topSharePointBar">
+		<div class="leftZone">
+			<a href="index.html"><div class="logo"></div></a>
+			<div class="menu">
+				<ul>
+                    <a href="#"><li class="hamburguer"><i class="fa fa-bars"></i> Menú</li></a>                    
+					<a href="index.html"><li><i class="fa fa-location-arrow"></i>Comunicados</li></a>
+					<a href="collaboration.html"><li><i class="fa fa-users"></i>Colaboración</li></a>
+					<a href="content-map.html"><li class="menu-last menu-selected"><i class="fa fa-sitemap"></i>Contents Map</li></a>
+				</ul>
+			</div>
+		</div>
+		<div class="rightZone">
+			<div class="menu">
+				<ul>
+					<li><img src="images/person-rounded-02.png"/></li>
+					<li><div class="name">Marco Stroppiana</div>
+					<div class="arrowDown"><i class="fa fa-sort-desc"></i></div>
+					</li>
+					
+					<li><div class="settingsIcon"><i class="fa fa-cog"></i></div></li>
+					<li><div class="helpIcon"><i class="fa fa-question"></i></div></li>	
+                </ul>
+			</div>
+		</div>
+	</div>
+		
+	<div class="main">
+
+	<!-- Header Content, Filters and Title -->
+	<div class="header">
+            <h1>Mapa de Contenidos</h1>
+            <div class="globalSearch globalSearchSmph" id="globalSearchSmph">
+            	<span class="arrowSearch"></span>
+            	<input type="text" id="buscador" alt="Buscar" placeholder="Buscar..." />
+            </div>
+        </div>
+		
+		<!--End header -->
+		
+        <div class="contResponsiveFull" id="content">
+		
+            <div class="horizontal-tiles">
+                <div class="title">
+                    <select id="typeLinks">
+                        <option value="corporativos">Links Corporativos</option>
+                        <option value="mis">Mis Links</option>
+                    </select>
+                </div>
+                
+                <div id="mis">
+                    <div class="tile small">
+                        <a href="documentos-procedimientos.html"><span>Contracts</span></a>
+                    </div>
+                    <div class="tile small">
+                        <span>Proposals</span>
+                    </div>
+                    <div class="tile small">
+                        <span class="tooltip" id="Project Center">Project C...</span>
+                    </div>
+                    <div class="tile small">
+                        <span>REP Site</span>
+                    </div>           
+                    <div class="tile small">
+                        <span>Solutions</span>
+                    </div>
+                    <div class="tile small">
+                        <span>Vacations</span>
+                    </div>
+                </div>
+                
+                <div id="corporativos">
+                    <div class="tile small">
+                        <span>Branch Offices</span>
+                    </div>
+                    <div class="tile small">
+                        <span>Sites</span>
+                    </div>
+                    <div class="tile small">
+                        <span>Activities</span>
+                    </div>
+                    <div class="tile small">
+                        <span>Raona Contacts</span>
+                    </div>
+                    <div class="tile small">
+                        <span>My</span>
+                    </div>     
+                    <div class="tile small">
+                        <span>Summary</span>
+                    </div>
+                    <div class="tile small">
+                        <span>Resources</span>
+                    </div>					
+                </div>
+                
+            </div>
+
+            
+            <div class="carousel">
+            <div class="vertical-tiles">
+                <div class="title">Company</div>
+                <div class="title sub">Comunications</div>                
+                <div class="tile small">
+                    <span class="tooltip" id="ShareBanner">ShareBann...</span>
+                </div>
+                <div class="tile small">
+                    <span class="tooltip" id="External Communication">External Communicati...</span>
+                </div>
+                
+                <div class="title sub">Dashboard</div>   
+                <div class="tile small">
+                    <span>Summary</span>
+                </div>
+                <div class="tile small">
+                    <span>Business Units</span>
+                </div>				
+                <div class="tile small">
+                    <span>IT Status</span>
+                </div>
+                <div class="tile small">
+                    <span>Present Spain</span>
+                </div>
+                <div class="tile small">
+                    <span>Present Argentina</span>
+                </div>
+                <div class="tile small">
+                    <span>Present UK</span>
+                </div>                
+                <div class="tile small">
+                    <span>Resources</span>
+                </div>                
+            </div>   
+            <div class="vertical-tiles">
+                <div class="title">Configuration</div>
+                <div class="title sub">PNL</div>                
+                <div class="tile small">
+                    <span class="tooltip" id="Spain Equivalence Matrix">Spain Equivalence...</span>
+                </div>
+                <div class="tile small">
+                    <span class="tooltip" id="Argentina Equivalence Matrix">Argentina Equivalence...</span>
+                </div>
+                <div class="tile small">
+                    <span class="tooltip" id="UK Equivalence Matrix">UK Equivalence...</span>
+                </div>
+                <div class="tile small">
+                    <span>Main Concepts</span>
+                </div>
+                <div class="tile small">
+                    <span>Group Concepts</span>
+                </div> 
+                <div class="tile small">
+                    <span>Detail Concepts</span>
+                </div> 
+                <div class="tile small">
+                    <span>Close Date</span>
+                </div> 				
+                <div class="title sub">SCB</div>                
+                <div class="tile small">
+                    <span>Matrix Codes</span>
+                </div>
+                <div class="tile small">
+                    <span class="tooltip" id="International Invoice Multiplier">International Invoice...</span>
+                </div>
+                <div class="tile small">
+                    <span>Close Date</span>
+                </div>  
+                <div class="tile small">
+                    <span>Close Current Month</span>
+                </div> 				
+            </div> 
+            <div class="vertical-tiles">
+                <div class="title">Collaboration</div> 
+                <div class="title sub">Communities</div>                
+                <div class="tile small">
+                    <span>Marketing</span>
+                </div>
+                <div class="tile small">
+                    <span>Experiencia de Usuario</span>
+                </div>
+                <div class="tile small">
+                    <span>Desarrolladores</span>
+                </div>
+                <div class="tile small">
+                    <span>Sharepoint Experts</span>
+                </div>
+                 
+                <div class="title sub">Spaces</div>                
+                <div class="tile small">
+                    <span>Piupoint</span>
+                </div>
+                <div class="tile small">
+                    <span>Facebook</span>
+                </div>
+                <div class="tile small">
+                    <span>Twitter</span>
+                </div>
+                <div class="tile small">
+                    <span>Linkedin</span>
+                </div>
+                <div class="tile small">
+                    <span>My</span>
+                </div>
+                <div class="tile small">
+                    <span>Raona Blog</span>
+                </div>                 
+                <div class="tile small">
+                    <span>Raona UK Blog</span>
+                </div>                  
+            </div> 
+             <div class="vertical-tiles">
+                <div class="title">Workspace</div> 
+                <div class="title sub">Area</div>                  
+                <div class="tile small">
+                    <span>Finances</span>
+                </div>
+                <div class="tile small">
+                    <span>Human Capital</span>
+                </div>
+                <div class="tile small">
+                    <span>Marketing</span>
+                </div>
+                <div class="tile small">
+                    <span>Sales</span>
+                </div>
+                <div class="tile small">
+                    <span>IT</span>
+                </div>
+                <div class="tile small">
+                    <span>Facilities</span>
+                </div>  
+                <div class="tile small">
+                    <span>Management</span>
+                </div>  
+                <div class="tile small">
+                    <span class="tooltip" id="Group Managers">Group Mana...</span>
+                </div> 				 
+            </div>            
+        </div>
+        </div>
+   
+		 <div class="linksPanel" id="linksPanel">
+             <div class="linksPanel-inner">
+                <i class="fa fa-angle-double-left" id="collapseOut"></i>
+
+                <ul class="linksSmallRight" id="linksSmallRightID">
+                    <li>
+                    <i class="fa fa-envelope-o"></i>
+                    </li>
+                    <li><i class="fa fa-user"></i></li>
+                    <li><i class="fa fa-folder-open"></i></li>
+                    <li><i class="fa fa-calendar"></i></li>
+                    <li><i class="fa fa-comments"></i></li>
+                    <li><i class="fa fa-server"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+	  
+	  <div class="rightPanel" id="rightPanel">
+                <i class="fa fa-angle-double-right" id="collapseIn"></i>
+				<div class="contAlerts">
+					<span class="titleWP"><i class="fa fa-bell"></i> Alertas</span>
+					<div class="alert">
+						<div class="category">Seguridad</div>
+						<div class="message">El próximo dia 31 de julio se llevará a cabo un ensayo de evacuación del edificio ante una ficticia alarma de incendio.</div>
+					</div>
+					<div class="alert">
+						<div class="category">IT Systems</div>
+						<div class="message">El fin de semana del 1 de agosto se procederá a la actualización de la plataforma SAP y no estará disponible hasta el lunes 3 de agosto a las 8:00 a.m.</div>
+					</div>
+					<div class="alert">
+						<div class="category">RRHH</div>
+						<div class="message">Se ha realizado el ingreso de la paga especial de beneficios de la verano junto con la nomina de julio.</div>
+					</div>
+				</div>
+
+				<div class="contLinks">
+					<span class="titleWP"><i class="fa fa-link"></i> LINKS CORPORATIVOS</span>
+					<div class="tile small">
+						<span>Branch Offices</span>
+					</div>
+					<div class="tile small">
+						<span>Sites</span>
+					</div>
+					<div class="tile small">
+						<span>Activities</span>
+					</div>
+					<div class="tile small addTiles">
+						<div class="addIcon"><i class="fa fa-plus"></i></div>
+					</div>
+					<div class="tile big">
+						<span>Raona Contacts</span>
+					</div>
+					<div class="tile small">
+						<span>My</span>
+					</div> 
+					<div class="tile small">
+						<span>Summary</span>
+					</div> 
+					<div class="tile double">
+						<span>Resources</span>
+					</div> 					
+				</div>    
+				<div class="contLinks">
+					<span class="titleWP"><i class="fa fa-link"></i> MIS LINKS</span>
+					<div class="tile small">
+						<span>Contracts</span>
+					</div>
+					<div class="tile small">
+						<span>Proposals</span>
+					</div>
+					<div class="tile small">
+						<span>Project Center</span>
+					</div>
+					<div class="tile small addTiles">
+						<div class="addIcon"><i class="fa fa-plus"></i></div>
+					</div>
+					<div class="tile double">
+						<span>REP Site</span>
+					</div>
+					<div class="tile small">
+						<span>Solutions</span>
+					</div>
+					<div class="tile small">
+						<span>Vacations</span>
+					</div>   					
+				</div>          
+				<div class="contCalendario">
+					<span class="titleWP"><i class="fa fa-calendar"></i> Calendario</span>
+					<div class="evento">
+                        <div class="date"><span>05</span> MIE</div>
+						<div class="time">15:00 - 17:00</div>
+						<div class="message">Revisar planning grupo 1</div>
+					</div>
+					<div class="evento">
+                        <div class="date"><span>07</span> VIE</div>
+						<div class="time">12:00 - 13:00</div>
+						<div class="message">Follow Up</div>
+					</div>
+					<div class="evento">
+                        <div class="date"><span>11</span> MAR</div>
+						<div class="time">9:00 - 11:00</div>
+						<div class="message">Reunión de RRHH</div>
+					</div>
+					<div class="evento">
+                        <div class="date"><span>15</span> MAR</div>
+						<div class="time">9:00 - 11:00</div>
+						<div class="message">UX Brain Storming</div>
+					</div>                   
+				</div>           
+			</div>
+    </div>
+			
+    <!-- End div main -->
+
+</body>
+</html>

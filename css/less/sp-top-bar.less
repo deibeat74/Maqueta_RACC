@@ -1,0 +1,50 @@
+// main: styles.less
+
+/*---------------------------- TOP SHAREPOINT BAR-------------------------------------*/
+
+.topSharePointBar{ position: absolute; top:0px; width: 100%;}
+.topSharePointBar .leftZone .logo{ background-image: url('../images/logoRaona.png'); background-repeat: no-repeat; width: 154px; height: 80px; margin-left:10px; margin-top: 0px; float: left;}
+.topSharePointBar .leftZone{ float: left; width: 80%; height: 30px; background-color: rgb(208,36,34);}
+.topSharePointBar .leftZone .menu { float: right; margin-top: 5px; margin-right: 20px; font-family:Frutinger-light; }
+.topSharePointBar .leftZone .menu ul li{ color: #FFF; float: left; margin-left: 10px; margin-right: 10px;}
+.topSharePointBar .leftZone .menu ul li a{ color: #FFF;}
+.topSharePointBar .leftZone .menu ul { list-style: none;}
+.topSharePointBar .leftZone .menu ul li a{ color: #FFF; text-decoration: none;}
+.topSharePointBar .leftZone .menu ul li a:hover{ opacity: 0.6;}
+.topSharePointBar .leftZone .menu .selectedComms{background-image: url('../images/selected.png');width: 11px;height: 5px;position: relative;}
+.topSharePointBar .leftZone .menu .selectedWhatsnew{background-image: url('../images/selected.png');width: 11px;height: 5px;position: relative;}
+.topSharePointBar .leftZone .menu .selectedComms{top: 1px;left: 25px;}
+.topSharePointBar .leftZone .menu .selectedWhatsnew{top: 1px;left: 52px;}
+.topSharePointBar .rightZone{ float: left; width: 20%; height: 30px; background-color: #d6d6d6;}
+.topSharePointBar .rightZone .menu ul li{ float: left; margin-right: 10px;}
+.topSharePointBar .rightZone .menu ul { list-style: none;}
+.topSharePointBar .rightZone .menu { float: right; margin-top: 7px; margin-left: 0px; font-size: 13px; color: #494949;}
+.topSharePointBar .rightZone .menu .settingsIcon{float: left;}
+.topSharePointBar .rightZone .menu .arrowDown{margin:26px 15px 0px 5px; float: left;}
+.topSharePointBar .rightZone .menu .name{float: left;}
+.topSharePointBar .rightZone .menu .helpIcon{float: left;}
+
+.topSharePointBar .leftZone .menu { float: right; margin-top: 0px; margin-right: 20px; font-family: @fnt-family-1; }
+.topSharePointBar .leftZone, .topSharePointBar .rightZone {height: 80px; border-bottom: 1px solid rgb(232, 232, 232);background-color:white;}
+.topSharePointBar .rightZone .menu{color:gray; font-weight: bold;}
+.topSharePointBar { position: relative;}
+.topSharePointBar .leftZone .menu ul li{height: 40px; padding:40px 25px 0px 25px; margin-left: 0px; margin-right: 0px; border-left:1px solid rgba(187, 187, 187, 0.46);  width: 170px; text-align: center;color:gray;}
+.topSharePointBar .leftZone .menu ul li:hover{background-color:rgba(128, 128, 128, 0.56); cursor: pointer; color:white;}
+.topSharePointBar .leftZone .logo { margin-top: 25px; margin-left:37px;}
+
+.topSharePointBar .rightZone .menu .name { padding-top: 28px;}
+.topSharePointBar .rightZone .menu .settingsIcon, .topSharePointBar .rightZone .menu  .helpIcon,
+.topSharePointBar .rightZone .menu .settingsIcon, .topSharePointBar .rightZone .menu  .settingIcons{ 
+    margin-top: 23px;
+    font-size: 20px;
+}
+.topSharePointBar .leftZone .menu ul li.hamburguer{
+    display:none;
+}
+
+.topSharePointBar .leftZone .menu ul li.menu-selected {color:white;}
+.topSharePointBar .leftZone .menu ul li i {margin-right:8px;}
+.topSharePointBar .rightZone .menu ul li img{width: 50px; margin-top: 10px;}
+
+.menu-selected{background-color: rgb(62, 62, 62);}
+.menu-last{border-right:1px solid rgba(187, 187, 187, 0.46);}
