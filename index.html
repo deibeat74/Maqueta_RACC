@@ -13,7 +13,11 @@
 <script type="text/javascript" src="plugins/fancyapps-fancyBox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 <script type="text/javascript">
     $(document).ready(function() {
-        $(".fancybox").fancybox();
+        //$(".fancybox").fancybox();
+$(".fancybox").fancybox({
+        'width': 815,
+        'type': 'iframe'
+    });		
         $('#buscador').keypress(function(event){
             var keycode = (event.keyCode ? event.keyCode : event.which);
             if(keycode == '13'){
@@ -21,7 +25,6 @@
             }
         });         
     });    
-    $(".fancybox").fancybox();  
    
 </script>
 </head>
@@ -182,7 +185,10 @@
                 
   
                 <div class="post-card post-card-2 item external" data-category="transition" >
-                 <div class="post-multimedia"><img src="images/sharepoint-2016.jpg"></div> 
+                 <div class="post-multimedia">
+					 <iframe class="post-video" width="320" height="221" src="https://www.youtube.com/embed/rV6PVzGs51I" frameborder="0" allowfullscreen></iframe>
+<!--					 <img src="images/sharepoint-2016.jpg">-->
+				</div> 
                  <div class="post-header markett">
                     <div class="post-category">Market News</div>
                     <div class="post-date">30 JUNIO</div>

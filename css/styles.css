@@ -4,10 +4,6 @@
 /* Escala de Grises */
 /* Colores alternativos */
 /*------------------------ FONTS ------------------------------*/
-@font-face {
-  font-family: trade-gothic-lt;
-  src: url('../fonts/trade-gothic-lt.eot'), url('../fonts/trade-gothic-lt.woff'), url('../fonts/trade-gothic-lt.ttf');
-}
 /*------------- MARGINS/PADDINGS/WIDTHS/HEIGHTS --------------*/
 /* ----------------------------------- MIXINS --------------------------------------*/
 /*------------------------ RESET CSS --------------------------*/
@@ -113,6 +109,15 @@ h5 {
 h6 {
   font-size: 13px;
 }
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 100;
+}
+h3 {
+  line-height: 20px !important;
+}
 p {
   font-size: 13px;
 }
@@ -128,13 +133,14 @@ p {
   width: 95%;
 }
 body {
-  font-family: "trade-gothic-lt", Verdana, Arial;
+  font-family: "Arial", Verdana, Arial;
   font-size: 13px;
   background-color: #f5f4f5;
+  min-width: 780px;
 }
 body.iframe {
   width: 798px !important;
-  background-color: #ffffff;
+  background-color: transparent;
 }
 table.document-list {
   table-layout: fixed;
@@ -253,7 +259,7 @@ table.document-list {
   float: left;
   width: 110px;
   text-align: center;
-  font-size: 13px;
+  font-size: 12px;
   padding: 6px 0px 6px;
   color: #FFF;
   background-color: #FFF;
@@ -287,7 +293,7 @@ table.document-list {
 .main .header .globalSearch {
   float: right;
   width: auto;
-  margin: 0px 20px 0px 0px;
+  margin: 0px 0px 0px 0px;
 }
 .main .header .globalSearch input {
   float: right;
@@ -323,14 +329,14 @@ table.document-list {
   font-size: 26px;
   color: #525252;
   margin-right: 50px;
-  font-family: trade-gothic-lt;
+  font-family: "Arial";
 }
 .main .header ul.filtersTop {
   float: left;
   width: auto;
   border-bottom: 2px solid #333;
   padding: 4px 5px 0px 10px;
-  font-family: "trade-gothic-lt";
+  font-family: "Arial";
 }
 .main .header ul.filtersTop li.selected {
   font-weight: normal;
@@ -515,7 +521,6 @@ table.document-list {
   padding-top: 0px;
   padding-bottom: 16px;
   height: 40px;
-  font-family: Frutinger-light-bold;
 }
 .post-card .post-content .post-message {
   color: #666;
@@ -627,7 +632,7 @@ table.document-list {
   font-size: 16px;
   text-transform: lowercase;
   color: #FFF;
-  font-family: "trade-gothic-lt";
+  font-family: "Arial";
   float: right;
   position: relative;
   right: 15px;
@@ -637,7 +642,7 @@ table.document-list {
 .post-card .post-content {
   margin-left: 15px;
   margin-right: 15px;
-  font-family: trade-gothic-lt;
+  font-family: "Arial";
 }
 .post-card .post-content .post-title {
   color: #2B405D;
@@ -647,7 +652,7 @@ table.document-list {
   padding-top: 0px;
   padding-bottom: 16px;
   height: 40px;
-  font-family: trade-gothic-lt;
+  font-family: "Arial";
 }
 .post-card .post-header {
   background-color: #839AC9;
@@ -660,7 +665,7 @@ table.document-list {
 }
 .post-card .post-author {
   font-size: 13px;
-  color: #dfdfdf;
+  color: #797979;
   font-weight: bold;
 }
 .post-card .post-category,
@@ -677,7 +682,8 @@ table.document-list {
 }
 .post-card .post-content .post-text {
   margin: 20px 0px;
-  font-size: 13px;
+  font-size: 12px;
+  line-height: 15px;
 }
 .post-card a {
   text-decoration: none;
@@ -688,7 +694,7 @@ table.document-list {
 .post-card.post-card-2 .post-content {
   margin-left: 0px;
   margin-right: 0px;
-  font-family: trade-gothic-lt;
+  font-family: "Arial";
   height: 134px;
   padding: 10px 20px 10px 20px;
 }
@@ -700,8 +706,7 @@ table.document-list {
   padding-top: 14px;
   padding-bottom: 5px;
   height: auto;
-  font-family: trade-gothic-lt;
-  font-weight: bold;
+  font-family: "Arial";
   line-height: 18px;
 }
 .post-card.post-card-2 .post-header {
@@ -723,7 +728,7 @@ table.document-list {
 }
 .post-card.post-card-2 .post-author {
   font-size: 13px;
-  color: #3F3F3F;
+  color: #797979;
   font-weight: bold;
 }
 .post-card.post-card-2 .post-category,
@@ -770,7 +775,7 @@ table.document-list {
 .post-card.post-card-3 .post-content {
   margin-left: 0px;
   margin-right: 0px;
-  font-family: trade-gothic-lt;
+  font-family: "Arial";
   height: 355px;
   padding: 10px 20px 10px 20px;
 }
@@ -782,8 +787,7 @@ table.document-list {
   padding-top: 14px;
   padding-bottom: 5px;
   height: auto;
-  font-family: trade-gothic-lt;
-  font-weight: bold;
+  font-family: "Arial";
   line-height: 18px;
 }
 .post-card.post-card-3 .post-header {
@@ -794,7 +798,7 @@ table.document-list {
 }
 .post-card.post-card-3 .post-author {
   font-size: 13px;
-  color: #3F3F3F;
+  color: #797979;
   font-weight: bold;
 }
 .post-card.post-card-3 .post-category,
@@ -847,7 +851,7 @@ table.document-list {
 .post-card.post-card-4 .post-content {
   margin-left: 0px;
   margin-right: 0px;
-  font-family: trade-gothic-lt;
+  font-family: "Arial";
   padding: 10px 20px 10px 20px;
   height: auto;
 }
@@ -859,8 +863,7 @@ table.document-list {
   padding-top: 14px;
   padding-bottom: 5px;
   height: auto;
-  font-family: trade-gothic-lt;
-  font-weight: bold;
+  font-family: "Arial";
   line-height: 18px;
 }
 .post-card.post-card-4 .post-content .post-title .likes {
@@ -880,7 +883,7 @@ table.document-list {
 }
 .post-card.post-card-4 .post-author {
   font-size: 13px;
-  color: #3F3F3F;
+  color: #797979;
   font-weight: bold;
 }
 .post-card.post-card-4 .post-category,
@@ -897,6 +900,9 @@ table.document-list {
   vertical-align: middle;
   float: left;
   margin: 0px 20px 15px 0px;
+}
+.post-card.post-card-4 .post-multimedia.video {
+  width: auto;
 }
 .post-card.post-card-4 .post-multimedia img {
   width: 100%;
@@ -951,7 +957,7 @@ table.document-list {
 .post-card.post-card-5 .post-content {
   margin-left: 0px;
   margin-right: 0px;
-  font-family: trade-gothic-lt;
+  font-family: "Arial";
   height: 134px;
   padding: 10px 20px 10px 20px;
 }
@@ -963,8 +969,7 @@ table.document-list {
   padding-top: 14px;
   padding-bottom: 5px;
   height: auto;
-  font-family: trade-gothic-lt;
-  font-weight: bold;
+  font-family: "Arial";
   line-height: 18px;
 }
 .post-card.post-card-5 .post-header {
@@ -987,7 +992,6 @@ table.document-list {
 .post-card.post-card-5 .post-author {
   font-size: 13px;
   color: gray;
-  font-weight: bold;
   margin-top: 10px;
 }
 .post-card.post-card-5 .post-author span {
@@ -1022,6 +1026,20 @@ table.document-list {
 }
 .post-card {
   border: 1px solid #e8e8e8;
+}
+.post-text h3 {
+  font-size: 15px;
+}
+.fancybox-skin {
+  background-color: transparent !important;
+}
+.fancybox-opened .fancybox-skin {
+  -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0) !important;
+  -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0) !important;
+}
+.fancybox-inner {
+  min-height: 500px !important;
 }
 /* ---------------------------------------- RIGHT PANEL ----------------------------------------------*/
 /* Styles Right Panel */
@@ -1248,7 +1266,7 @@ table.document-list {
   width: 100%;
   font-weight: bold;
   font-size: 14px;
-  font-family: trade-gothic-lt;
+  font-family: "Arial";
   text-transform: uppercase;
   color: gray;
   border-top: 1px solid #e2e2e2;
@@ -1492,7 +1510,7 @@ ul.linksSmallRight li i,
   float: right;
   margin-top: 0px;
   margin-right: 20px;
-  font-family: "trade-gothic-lt";
+  font-family: "Arial";
 }
 .topSharePointBar .leftZone,
 .topSharePointBar .rightZone {
@@ -1558,7 +1576,7 @@ ul.linksSmallRight li i,
 /* --------------------------------------- SOCIAL -----------------------------------------*/
 .post-container {
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 13px;
 }
 .post-container.respuesta {
   margin-bottom: 10px;
@@ -1577,7 +1595,7 @@ ul.linksSmallRight li i,
   padding: 20px;
   background-color: #e8e8e8;
   margin-left: 90px;
-  font-family: trade-gothic-lt;
+  font-family: "Arial";
 }
 .post-container .post-body .author {
   font-weight: bold;
@@ -1619,7 +1637,7 @@ ul.linksSmallRight li i,
   width: 100%;
   border: 1px solid #cdcdcd;
   overflow: hidden;
-  font-family: trade-gothic-lt;
+  font-family: "Arial";
   height: 30px;
 }
 .comments-container {
@@ -2009,7 +2027,7 @@ ul.linksSmallRight li i,
   float: left;
   width: 100%;
   font-weight: bold;
-  font-family: trade-gothic-lt;
+  font-family: "Arial";
   text-transform: uppercase;
   color: gray;
   border-bottom: 1px solid #e2e2e2;
@@ -2048,16 +2066,15 @@ a > * {
   -ms-transition: all linear .2s;
 }
 /*---------------------------------- MEDIA QUERIES -----------------------------------*/
-@media only screen and (min-width: 0px) and (max-width: 800px) {
-  /*
-    .topSharePointBar .leftZone .menu ul li {
-        margin-left:-100px;
-    }    
-*/
-  .topSharePointBar .leftZone .menu ul li.hamburguer {
-    width: 90px;
-    padding: 30px 10px 0px 10px;
-    /*        margin-left:0px;*/
+@media only screen and (min-width: 0px) and (max-width: 900px) {
+  .topSharePointBar .rightZone .menu ul li img {
+    display: none;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 1070px) {
+  .main .header ul.filtersTop {
+    clear: both;
+    margin-left: -9px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 550px) {
@@ -2074,10 +2091,10 @@ a > * {
 }
 @media only screen and (min-width: 0px) and (max-width: 1279px) {
   .main .header .globalSearch input {
-    width: 135px;
+    width: 100px;
   }
   .topSharePointBar .leftZone .menu ul:hover {
-    position: absolute;
+    position: relative;
     z-index: 1000;
     background-color: white;
   }
@@ -2111,41 +2128,13 @@ a > * {
   .topSharePointBar .leftZone .menu ul:hover a {
     text-decoration: none;
   }
+  .topSharePointBar .rightZone {
+    width: 30%;
+  }
+  .topSharePointBar .leftZone {
+    width: 70%;
+  }
 }
-/*
-@media only screen and (min-width: 0px) and (max-width: 1219px) {
-    .topSharePointBar .leftZone {
-      width: 80%;
-    }
-    .topSharePointBar .leftZone .menu ul li {
-      padding: 40px 15px 0px 15px;
-    }
-    .topSharePointBar .rightZone .menu ul li {
-       margin-left: 0px; 
-       margin-right: 4px; 
-    }
-    .main .header h1 {
-      margin-right: 10px
-    }
-    .main .header ul.filtersTop li {
-      width: 94px;
-      font-size: 12px
-    }
-    .main .leftColumn {
-        width: 12%;
-    }
-    .main .contResponsiveFull.centerColumn {
-      width: 60%;
-    } 
-    .main .contResponsiveFull.centerColumn .document-list tr.docs-header  {font-size:11px;} 
-    .topSharePointBar .leftZone .menu ul li{
-        display:none;
-    }     
-    .topSharePointBar .leftZone .menu ul li.hamburguer{
-        display:inline-block;
-    }       
-}
-*/
 @media only screen and (min-width: 1280px) and (max-width: 1365px) {
   .topSharePointBar .rightZone .menu ul li {
     margin-left: 0px;
